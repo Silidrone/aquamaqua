@@ -1,0 +1,12 @@
+TFT:
+	D5
+	D7
+	D1
+	D6
+	D2
+Sensors:
+	D9
+	D4
+	A0
+Keyboard:
+	A0
