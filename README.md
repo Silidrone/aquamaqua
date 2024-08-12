@@ -3,7 +3,7 @@ aquamaqua - by Muhamed Cicak,
 
 I wrote this way back when I was 14 years old, so be mindful of that :)
 
-This is an aquarium monitoring project, written in C++ for esp8266
+This is a hobby aquarium monitoring project, written in C++ for esp8266
 microcontrollerm, with interactive UI on a TFT display
 (with switch buttons). The microprocessor reads values from sensors
 periodically and logs them to the server by connecting to the Wi-Fi (user
