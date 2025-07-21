@@ -1,30 +1,62 @@
-# aquamaqua
-aquamaqua - by Muhamed Cicak,
+# AquaMaqua - Aquarium Monitoring System for ESP8266
 
-I wrote this way back when I was 14 years old, so be mindful of that :)
+A hobby project from when I was 14, showcasing early passion for programming and problem-solving.
 
-This is a hobby aquarium monitoring project, written in C++ for esp8266
-microcontrollerm, with interactive UI on a TFT display
-(with switch buttons). The microprocessor reads values from sensors
-periodically and logs them to the server by connecting to the Wi-Fi (user
-can choose which wi-fi to connect via GUI and enter the password). The
-system also shows real time graphs (which I coded from scratch, using only
-drawBP and drawLine functions from TfT Adafruit library). Graphs are
-configurable as to what density they should have etc. Object Oriented
-Programming was extensively used. I basically wrote my own GUI library for
-TFT where you can easily create textboxes, keyboard interface, shapes,
-graphs, handle input etc. Also I created a Screen concept where you can
-construct screens user will go through and what GUI elements will take place
-on those screens (I think I borrowed this idea from the Unity game
-engine). Inputs are handled with interrupts, so that the user doesn't have
-any "lag". I also wrote a wrapper around the interface code
-for accessing EEPROM to use it easily (I created a similar api to
-localStorage in web browsers, where you can add data with string key and
-value pairs and access it easily later on). Most things were written from
-scratch, even things as basic as a linked list. There's probably some things
-I left out in this README, from details to features, because it's been quite
-a while since I last interacted with this project, so feel free to explore
-the source code youself :-). Cheers!
+## Overview
 
-P.S. This code was run by Platformio plugin VSCode. In lib/ directory you
-have all of the libraries needed to run the system.
+AquaMaqua is a comprehensive aquarium monitoring system built for the ESP8266 microcontroller. It features real-time sensor monitoring, Wi-Fi connectivity, data logging, and a custom-built GUI framework, all written from scratch in C++.
+
+## Features
+
+### Custom GUI Framework
+- Built entirely from scratch using TFT display primitives
+- Interactive UI with textboxes, keyboard interface, and shapes
+- Screen-based navigation system (inspired by Unity's UI concepts)
+- Interrupt-driven input handling for responsive user experience
+
+### Real-Time Monitoring
+- Sensor data collection and display
+- Custom-coded graphing system using only drawBP and drawLine functions
+- Configurable graph density and display options
+- Periodic data logging to remote server
+
+### Connectivity
+- Wi-Fi connection management through GUI
+- User-selectable networks with password entry
+- Remote data logging capabilities
+
+### Data Storage
+- Custom EEPROM wrapper with localStorage-like API
+- Key-value pair storage system for configuration persistence
+- Easy data access and management
+
+## Technical Highlights
+
+- **Hardware**: ESP8266 microcontroller with TFT display and input switches
+- **Language**: C++ with extensive use of Object-Oriented Programming
+- **Libraries**: Custom implementations including linked lists and data structures
+- **Architecture**: Modular screen-based GUI system with interrupt handling
+
+### Prerequisites
+- PlatformIO IDE (VS Code extension)
+- ESP8266 development board
+- TFT display (compatible with Adafruit TFT library)
+- Sensors (temperature, pH, etc.)
+
+### Project Structure
+```
+aquamaqua/
+├── lib/          # Required libraries
+├── src/          # Main source code
+└── README.md     # This file
+```
+
+## Development Notes
+
+This project represents an early exploration into embedded systems development, featuring:
+- Ground-up GUI framework development
+- Custom data structures and algorithms
+- Hardware-software integration
+- Real-time system design
+
+Feel free to explore the source code to discover additional features and implementation details.
