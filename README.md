@@ -4,7 +4,7 @@ A hobby project from when I was 14, showcasing early passion for programming and
 
 ## Overview
 
-AquaMaqua is a comprehensive aquarium monitoring system built for the ESP8266 microcontroller. It features real-time sensor monitoring, Wi-Fi connectivity, data logging, and a custom-built GUI framework, all written from scratch in C++.
+AquaMaqua is an aquarium monitoring system built for the ESP8266 microcontroller. It features real-time sensor monitoring, Wi-Fi connectivity, data logging, and a custom-built GUI framework, all written from scratch in C++.
 
 ## Features
 
